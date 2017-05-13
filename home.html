@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<title>Myanmar Charities Connection</title>
+<link rel="stylesheet" href="home.css"/>
+<script type="text/javascript">
+	var imagecount=1;
+var total=7;
+function slide(x)
+{
+	var Image=document.getElementById('img');
+	imagecount=imagecount+x;
+	if(imagecount>total){ imagecount=1;}
+	if(imagecount<1){imagecount=total;}
+	
+	Image.src="img"+imagecount+".jpeg";
+}
+
+</script>
+<div id="container">
+    <div id="head">
+	
+                 <div class="fixedwidth">
+	<div id="logodiv"><img src="mc2.png"/>
+                
+               </div>
+                <h3><font color="blue"> Myanmar Charities Connection</font></h3>
+                 </div>
+   </div>
+   <div id="menubar">
+	<div class="fixedwidth">
+	<div id="menudiv">
+	<ul>
+	<li><a href="home.html">Home</a></li>
+  	<li><a href="news.html">News</a></li>
+	<li><a href="project.html" class="pro">Project</a>
+	       <ul>
+		<li><a href="Edu.html">Education</a> </li>
+		<li><a href="Water.html">Water</a></li>
+		<li><a href="disabled.html">Disabled people/children</a></li>
+	       </ul>
+	</li>
+	<li><a href="volunteer.html">Volunteer</a></li>
+	<li><a href="charities.html">Charities</a></li>
+	<li><a href="about.html">About us</a></li>
+	  <li><a href="Contact.html">contact us</a></li>
+	</ul>
+	</div>
+                  </div>
+   </div>
+ 
+<div id="content">
+	<div class="fixedwidth">
+           <div id="picture">
+            <img  src="img1.jpeg" id="img"/>
+            <div id="left-holder"><img onclick="slide(-1)" src="left.png" class="left"/></div>
+            <div id="right-holder"><img onclick="slide(1)" src="right.png" class="right"/></div>
+
+           </div>       
+           <div id="map">
+           		<img src="myan.jpg"/>
+           </div>
+           <ul class="pro">
+            <li>Education</li>
+           <li>Water</li>
+           <li>Disabled/people children</li>
+           </ul>
+	</div>
+</div>
+
+<div id="contact">
+	<div class="fixedwidth">
+                         <div id="contactdiv">
+		<h4 class="mcc"><span class="mc">MC</span><font color="blue">2</font></h4>
+		<ul class="c2">
+		         <li><a href="home.html">Home</li>
+		         <li><a href="news.html">News</li>
+		         <li><a href="project.html">Project</li>
+		</ul>
+		<ul class="c2">
+		        <li><a href="volunteer.html">Volunteer</li>
+		         <li><a href="charities.html">Charities</li>
+		         <li><a href="about.html">Myanmar</li>
+		</ul>
+	</div>
+	       <div id="contactdiv1"> <h4 class="aboutus">About Us</h4>
+	       <ul class="c2">
+	       <li>Who are we?</li>
+	       <li>Our vision</li>
+	       <li>Our mission</li>
+	       
+	       </ul>
+	       </div>
+	       	<div id="contactdiv1">
+    				<h4 class="contactus">Contact Us</h4>
+					<ul class="c2">
+							<li>Email    :  kayt36108@gmail.com</li>
+							<li>call        :  0932086757</li>
+							<li>Address :  UCSY</li>
+					</ul>
+		    </div>
+	</div>
+	<div id="footer"><div id="fixedwidth"><p>@copyright by UCSY Dream Team</p></div></div>
+</div>
+</div>
+
+</body>
+</html>
